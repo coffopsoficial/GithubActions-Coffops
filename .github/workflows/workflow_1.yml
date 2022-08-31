@@ -1,0 +1,11 @@
+name: workflow_1
+on:
+  push:
+    branches:
+      - main
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print boas vindas
+        run: echo "Olá Coffops - Usando o repositório ${{ github.repository }}!"
